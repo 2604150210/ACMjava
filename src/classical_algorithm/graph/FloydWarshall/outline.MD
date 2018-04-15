@@ -1,0 +1,1 @@
+POJ3615CowHurdles.java使用了JAVA的IO高速读入输入
