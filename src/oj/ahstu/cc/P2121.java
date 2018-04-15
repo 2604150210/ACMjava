@@ -2,7 +2,6 @@ package oj.ahstu.cc;
 
 import java.util.Arrays;
 import java.util.Scanner;
-import java.util.StringJoiner;
 
 /**
  * Created by jal on 2017/12/19 0019.
@@ -10,7 +9,7 @@ import java.util.StringJoiner;
 public class P2121 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        while (scanner.hasNext()){
+        while (scanner.hasNext()) {
             String str = scanner.nextLine();
 
             char cs[] = str.toCharArray();

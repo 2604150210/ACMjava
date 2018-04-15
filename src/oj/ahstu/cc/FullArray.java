@@ -7,7 +7,8 @@ import java.util.Scanner;
  */
 public class FullArray {
     private static int n;
-    private static int []book,out;
+    private static int[] book, out;
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         n = scanner.nextInt();
@@ -17,7 +18,7 @@ public class FullArray {
     }
 
     private static void dfs(int step) {
-        if(step >= 9){
+        if (step >= 9) {
 
         }
     }

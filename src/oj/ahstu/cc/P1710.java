@@ -7,7 +7,7 @@ import java.util.Scanner;
  */
 public class P1710 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner( System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("--------------------------------------------------- ");
         System.out.println("COUNTRY    AREA(10K  km2)    POP.(10K)    GDP(Billion$) ");
         System.out.println("--------------------------------------------------- ");

@@ -10,14 +10,14 @@ public class B {
         Scanner scanner = new Scanner(System.in);
         long n = scanner.nextLong();
         long m = scanner.nextLong();
-        if(n > m){
+        if (n > m) {
             long t = n;
             n = m;
             m = n;
         }
-        if(n == 1) System.out.println(0);
-        else if(n == 2) System.out.println((m-2)*2);
+        if (n == 1) System.out.println(0);
+        else if (n == 2) System.out.println((m - 2) * 2);
         else
-        System.out.println(2*m*n-3*n-3*m+8);
+            System.out.println(2 * m * n - 3 * n - 3 * m + 8);
     }
 }

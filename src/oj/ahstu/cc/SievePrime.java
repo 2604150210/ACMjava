@@ -8,24 +8,25 @@ import java.util.Scanner;
  */
 public class SievePrime {
     private static final int MAXN = 2000000;
+
     public static void main(String[] args) {
-       Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         int isPrime[] = new int[MAXN];
-        Arrays.fill(isPrime,1);
+        Arrays.fill(isPrime, 1);
         isPrime[0] = 0;
         isPrime[1] = 0;
-        for(int i = 2; i < MAXN; i++){
-            if(isPrime[i] == 1){
-                for(int j = i*i; j < MAXN; j+=i){
+        for (int i = 2; i < MAXN; i++) {
+            if (isPrime[i] == 1) {
+                for (int j = i * i; j < MAXN; j += i) {
                     isPrime[j] = 0;
                 }
             }
         }
-       int n = scanner.nextInt();
-        for(int i = 0; i <= n; i++){
-            if(isPrime[i] == 1){
-                System.out.print(i+" ");
+        int n = scanner.nextInt();
+        for (int i = 0; i <= n; i++) {
+            if (isPrime[i] == 1) {
+                System.out.print(i + " ");
             }
         }
     }

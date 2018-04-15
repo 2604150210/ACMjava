@@ -10,8 +10,8 @@ public class First {
         Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt();
         int b = scanner.nextInt();
-        int maxn = 0,index = a;
-        for(int  i = a; i <= b; i++){
+        int maxn = 0, index = a;
+        for (int i = a; i <= b; i++) {
 
         }
     }

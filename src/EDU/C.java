@@ -9,8 +9,9 @@ import java.util.Scanner;
  */
 public class C {
     private static String str;
-    private static int len,find = 0;
-    private static char[] out,book,a,b;
+    private static int len, find = 0;
+    private static char[] out, book, a, b;
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         str = scanner.nextLine();
@@ -21,22 +22,22 @@ public class C {
         int flag = 0;
         out = new char[len];
         book = new char[len];
-        HashMap<Character,Integer>hashMap = new HashMap<>();
-        for(int i = 0; i < len; i++){
-            if(hashMap.containsKey(a[i])){
+        HashMap<Character, Integer> hashMap = new HashMap<>();
+        for (int i = 0; i < len; i++) {
+            if (hashMap.containsKey(a[i])) {
                 int t = hashMap.get(a[i]);
-                hashMap.put(a[i],t+1);
-            }else {
-                hashMap.put(a[i],1);
+                hashMap.put(a[i], t + 1);
+            } else {
+                hashMap.put(a[i], 1);
             }
-            if(hashMap.get(a[i]) > len / 2){
+            if (hashMap.get(a[i]) > len / 2) {
                 flag = 1;
                 System.out.println("impossible");
                 break;
             }
         }
 
-        if(flag == 0) {
+        if (flag == 0) {
             dfs(0);
             if (find == 0) {
                 System.out.println("impossible");
@@ -45,15 +46,15 @@ public class C {
     }
 
     private static void dfs(int step) {
-        if(find == 0){
-            if(step >= len ){
+        if (find == 0) {
+            if (step >= len) {
                 find = 1;
                 System.out.println(String.valueOf(out));
 
                 return;
             }
-            for(int i = 0; i < len; i++){
-                if(book[i] == 0 && a[step] != b[i]){
+            for (int i = 0; i < len; i++) {
+                if (book[i] == 0 && a[step] != b[i]) {
                     book[i] = 1;
                     out[step] = b[i];
                     dfs(step + 1);
@@ -61,6 +62,6 @@ public class C {
                 }
             }
         }
-        }
+    }
 
 }

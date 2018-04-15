@@ -9,16 +9,17 @@ import java.awt.event.ActionListener;
  * Created by jal on 2017/12/19 0019.
  */
 public class Calculator extends JFrame implements ActionListener {
-    JTextField textFieldFirst,textFieldSecond,textFieldResult;
-    JButton btnadd,btnsub,btnmul,btndiv,btnequ;
+    JTextField textFieldFirst, textFieldSecond, textFieldResult;
+    JButton btnadd, btnsub, btnmul, btndiv, btnequ;
     int a, b, val;
-    Calculator(){
+
+    Calculator() {
         super("Calculator");
         this.setLayout(new FlowLayout());
         this.add(textFieldFirst = new JTextField());
 
         JPanel panel = new JPanel();
-        panel.setLayout(new GridLayout(4,1));
+        panel.setLayout(new GridLayout(4, 1));
         panel.add(btnadd = new JButton("+"));
         panel.add(btnsub = new JButton("-"));
         panel.add(btnmul = new JButton("*"));
@@ -43,22 +44,22 @@ public class Calculator extends JFrame implements ActionListener {
     public static void main(String[] args) {
         new Calculator();
     }
+
     @Override
     public void actionPerformed(ActionEvent e) {
         a = Integer.parseInt(textFieldFirst.getText());
         b = Integer.parseInt(textFieldSecond.getText());
-        if(e.getSource() == btnadd){
+        if (e.getSource() == btnadd) {
             val = a + b;
-        }else if(e.getSource() == btnsub){
+        } else if (e.getSource() == btnsub) {
             val = a - b;
-        }else if (e.getSource() == btnmul){
+        } else if (e.getSource() == btnmul) {
             val = a * b;
-        }else if (e.getSource() == btndiv){
+        } else if (e.getSource() == btndiv) {
             val = a / b;
-        }else if (e.getSource() == btnequ){
+        } else if (e.getSource() == btnequ) {
             updateView();
-        }
-        else {
+        } else {
 
         }
     }

@@ -12,10 +12,10 @@ public class P2122 {
         Scanner scanner = new Scanner(System.in);
         while (scanner.hasNext()) {
             int n = scanner.nextInt();
-            BigInteger a[ ] = new BigInteger[n];
-            for(int i = 0; i < n; i++)a[i] = scanner.nextBigInteger();
+            BigInteger a[] = new BigInteger[n];
+            for (int i = 0; i < n; i++) a[i] = scanner.nextBigInteger();
             Arrays.sort(a);
-            for (BigInteger i : a){
+            for (BigInteger i : a) {
                 System.out.println(i);
             }
         }

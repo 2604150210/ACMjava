@@ -31,21 +31,21 @@ package oj.ahstu.cc;
  ******************************************************************************/
 
 /**
- *  The {@code Complex} class represents a complex number.
- *  Complex numbers are immutable: their values cannot be changed after they
- *  are created.
- *  It includes methods for addition, subtraction, multiplication, division,
- *  conjugation, and other common functions on complex numbers.
- *  <p>
- *  For additional documentation, see <a href="https://algs4.cs.princeton.edu/99scientific">Section 9.9</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
+ * The {@code Complex} class represents a complex number.
+ * Complex numbers are immutable: their values cannot be changed after they
+ * are created.
+ * It includes methods for addition, subtraction, multiplication, division,
+ * conjugation, and other common functions on complex numbers.
+ * <p>
+ * For additional documentation, see <a href="https://algs4.cs.princeton.edu/99scientific">Section 9.9</a> of
+ * <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
  *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
+ * @author Robert Sedgewick
+ * @author Kevin Wayne
  */
 class Complex {
     private double re;   // the real part
-    private  double im;   // the imaginary part
+    private double im;   // the imaginary part
 
     /**
      * Initializes a complex number from the specified real and imaginary parts.
@@ -67,12 +67,12 @@ class Complex {
      * Returns a string representation of this complex number.
      *
      * @return a string representation of this complex number,
-     *         of the form 34 - 56i.
+     * of the form 34 - 56i.
      */
     public String toString() {
         if (im == 0) return re + "";
         if (re == 0) return im + "i";
-        if (im <  0) return re + " - " + (-im) + "i";
+        if (im < 0) return re + " - " + (-im) + "i";
         return re + " + " + im + "i";
     }
 
@@ -99,7 +99,7 @@ class Complex {
     /**
      * Returns the sum of this complex number and the specified complex number.
      *
-     * @param  that the other complex number
+     * @param that the other complex number
      * @return the complex number whose value is {@code (this + that)}
      */
     public Complex plus(Complex that) {
@@ -112,7 +112,7 @@ class Complex {
      * Returns the result of subtracting the specified complex number from
      * this complex number.
      *
-     * @param  that the other complex number
+     * @param that the other complex number
      * @return the complex number whose value is {@code (this - that)}
      */
     public Complex minus(Complex that) {
@@ -124,7 +124,7 @@ class Complex {
     /**
      * Returns the product of this complex number and the specified complex number.
      *
-     * @param  that the other complex number
+     * @param that the other complex number
      * @return the complex number whose value is {@code (this * that)}
      */
     public Complex times(Complex that) {
@@ -136,7 +136,7 @@ class Complex {
     /**
      * Returns the product of this complex number and the specified scalar.
      *
-     * @param  alpha the scalar
+     * @param alpha the scalar
      * @return the complex number whose value is {@code (alpha * this)}
      */
     public Complex scale(double alpha) {
@@ -146,7 +146,7 @@ class Complex {
     /**
      * Returns the product of this complex number and the specified scalar.
      *
-     * @param  alpha the scalar
+     * @param alpha the scalar
      * @return the complex number whose value is {@code (alpha * this)}
      * @deprecated Replaced by {@link #scale(double)}.
      */
@@ -170,7 +170,7 @@ class Complex {
      * @return the complex number whose value is {@code (1 / this)}
      */
     public Complex reciprocal() {
-        double scale = re*re + im*im;
+        double scale = re * re + im * im;
         return new Complex(re / scale, -im / scale);
     }
 
@@ -196,7 +196,7 @@ class Complex {
      * Returns the result of dividing the specified complex number into
      * this complex number.
      *
-     * @param  that the other complex number
+     * @param that the other complex number
      * @return the complex number whose value is {@code (this / that)}
      */
     public Complex divides(Complex that) {
@@ -238,7 +238,6 @@ class Complex {
     public Complex tan() {
         return sin().divides(cos());
     }
-
 
 
 }

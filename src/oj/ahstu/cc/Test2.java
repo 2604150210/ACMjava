@@ -1,7 +1,5 @@
 package oj.ahstu.cc;
 
-import java.util.Scanner;
-
 /**
  * Created by jal on 2017/11/7 0007.
  */

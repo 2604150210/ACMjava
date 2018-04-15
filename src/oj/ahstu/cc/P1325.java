@@ -9,11 +9,11 @@ public class P1325 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        while (scanner.hasNext()){
+        while (scanner.hasNext()) {
             int n = scanner.nextInt();
             String str = "";
-            for(int i = 0; i < n; i++){
-                str = str + (char)('A'+i) + str;
+            for (int i = 0; i < n; i++) {
+                str = str + (char) ('A' + i) + str;
             }
             System.out.println(str);
         }

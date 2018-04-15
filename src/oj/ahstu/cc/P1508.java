@@ -9,39 +9,38 @@ import java.util.Scanner;
 public class P1508 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        while (scanner.hasNext()){
+        while (scanner.hasNext()) {
             int n = scanner.nextInt();
             int m = scanner.nextInt();
-            int []a = new int[n];
-            int []b = new int[m];
-            for(int i = 0; i < n; i++){
+            int[] a = new int[n];
+            int[] b = new int[m];
+            for (int i = 0; i < n; i++) {
                 a[i] = scanner.nextInt();
             }
             Arrays.sort(a);
-            for(int i = 0; i < m; i++){
+            for (int i = 0; i < m; i++) {
                 b[i] = scanner.nextInt();
             }
             Arrays.sort(b);
             int k = scanner.nextInt();
             int i;
-            for(i = 0; i < b.length; i++){
-                if(b[i] != a[i] ){
-                    if(a[i] == k){
-                        System.out.println("YES");
-                    }
-                    else {
-                        System.out.println("NO");
-                    }
-                    break;
-                }
-            }
-            if(i >= b.length){
-
+            for (i = 0; i < b.length; i++) {
+                if (b[i] != a[i]) {
                     if (a[i] == k) {
                         System.out.println("YES");
                     } else {
                         System.out.println("NO");
                     }
+                    break;
+                }
+            }
+            if (i >= b.length) {
+
+                if (a[i] == k) {
+                    System.out.println("YES");
+                } else {
+                    System.out.println("NO");
+                }
 
             }
         }

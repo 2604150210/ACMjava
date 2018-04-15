@@ -8,27 +8,26 @@ import java.util.Scanner;
 public class P2131 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        while (scanner.hasNext()){
+        while (scanner.hasNext()) {
             int n = scanner.nextInt();
             int a[][] = new int[n][n];
-            for(int  i = 0; i < n; i++){
-                for(int j = 0; j<n; j++)
+            for (int i = 0; i < n; i++) {
+                for (int j = 0; j < n; j++)
                     a[i][j] = scanner.nextInt();
             }
             int flag = 0;
-            for (int i = 0; i < n; i++){
-                for(int j = 0; j <= i;j++){
-                    if(a[i][j] != a[j][i]){
+            for (int i = 0; i < n; i++) {
+                for (int j = 0; j <= i; j++) {
+                    if (a[i][j] != a[j][i]) {
                         flag = 1;
                         break;
                     }
                 }
-                if(flag == 1)break;
+                if (flag == 1) break;
             }
-            if(flag == 0){
+            if (flag == 0) {
                 System.out.println("Yes!");
-            }
-            else System.out.println("No!");
+            } else System.out.println("No!");
         }
     }
 }

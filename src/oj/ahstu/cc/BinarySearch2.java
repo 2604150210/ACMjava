@@ -8,20 +8,19 @@ import java.util.Scanner;
 public class BinarySearch2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        while (scanner.hasNext()){
+        while (scanner.hasNext()) {
             int n = Integer.parseInt(scanner.nextLine());
-            if(n == 0)break;
+            if (n == 0) break;
             String str = scanner.nextLine();
-          //  BinarySearch2 root = new BinarySearch2();
+            //  BinarySearch2 root = new BinarySearch2();
 
             str = str.trim();
-            for(int i = 0; i < n; i++){
+            for (int i = 0; i < n; i++) {
                 String second = scanner.nextLine();
                 second = second.trim();
-                if(str.equals(second)){
+                if (str.equals(second)) {
                     System.out.println("YES");
-                }
-                else {
+                } else {
                     System.out.println("NO");
                 }
 

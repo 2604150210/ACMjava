@@ -7,16 +7,20 @@ import java.util.Scanner;
  */
 public class BinarySort {
     public static int n;
-    public static int []a;
+    public static int[] a;
+    int value;
+    BinarySort left;
+    BinarySort right;
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        while (scanner.hasNext()){
+        while (scanner.hasNext()) {
             n = scanner.nextInt();
-            a = new int[n+1];
-            for(int i = 1; i <= n; i++){
+            a = new int[n + 1];
+            for (int i = 1; i <= n; i++) {
                 a[i] = scanner.nextInt();
             }
-            
+
             BinarySort root = new BinarySort();
             root = createBinary(1);
 
@@ -30,7 +34,7 @@ public class BinarySort {
     }
 
     private static void formOrder(BinarySort root) {
-        if(root != null){
+        if (root != null) {
             formOrder(root.left);
             formOrder(root.right);
             System.out.print(root.value + " ");
@@ -38,7 +42,7 @@ public class BinarySort {
     }
 
     private static void inOrder(BinarySort root) {
-        if (root!=null){
+        if (root != null) {
             inOrder(root.left);
             System.out.print(root.value + " ");
             inOrder(root.right);
@@ -46,7 +50,7 @@ public class BinarySort {
     }
 
     private static void preOrder(BinarySort root) {
-        if(root!=null){
+        if (root != null) {
             System.out.print(root.value + " ");
             preOrder(root.left);
             preOrder(root.right);
@@ -54,9 +58,6 @@ public class BinarySort {
 
     }
 
-    int value;
-    BinarySort left;
-    BinarySort right;
     private static BinarySort createBinary(int index) {
         try {
             BinarySort root = new BinarySort();
@@ -64,7 +65,7 @@ public class BinarySort {
             root.left = createBinary(index * 2);
             root.right = createBinary(index * 2 + 1);
             return root;
-        }catch (ArrayIndexOutOfBoundsException e){
+        } catch (ArrayIndexOutOfBoundsException e) {
             return null;
         }
     }

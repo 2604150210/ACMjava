@@ -7,22 +7,22 @@ import java.awt.event.ActionListener;
 
 /**
  * Java Swing模仿Windows自带的计算器:
- *  GUI复杂界面生成
+ * GUI复杂界面生成
  * 界面层次this{
- *     topPanel{
- *      screen,
- *      editPanel{
- *       editButton
- *       //......
- *      }
- *     },
- *     bottomPanel{
- *      inputButton
- *      //......
- *      }
- *     }
- * @author ZHAO Jing 33470027#qq.com
+ * topPanel{
+ * screen,
+ * editPanel{
+ * editButton
+ * //......
+ * }
+ * },
+ * bottomPanel{
+ * inputButton
+ * //......
+ * }
+ * }
  *
+ * @author ZHAO Jing 33470027#qq.com
  */
 public class Calculator extends JFrame implements ActionListener {
     final static String TAGS[] = "MC 7 8 9 / sqrt MR 4 5 6 * % MS 1 2 3 - 1/x M+ 0 +/- . + =".split(" ");
@@ -66,9 +66,10 @@ public class Calculator extends JFrame implements ActionListener {
         setVisible(true);
     }
 
-    public void actionPerformed(ActionEvent e) {
-    }
     public static void main(String[] args) {
         new Calculator();
+    }
+
+    public void actionPerformed(ActionEvent e) {
     }
 }

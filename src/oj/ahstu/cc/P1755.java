@@ -1,7 +1,5 @@
 package oj.ahstu.cc;
 
-import com.intellij.icons.AllIcons;
-
 import java.math.BigInteger;
 import java.util.Scanner;
 

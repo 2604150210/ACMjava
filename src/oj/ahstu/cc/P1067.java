@@ -13,29 +13,47 @@ public class P1067 {
         int yi = n / 100000000;
         int yi1 = yi / 10;
         int yi2 = yi % 10;
-        if(yi1 == 1){
+        if (yi1 == 1) {
             str += "shi ";
-        }else if (yi1 == 2){
+        } else if (yi1 == 2) {
             str += "er shi ";
         }
-        switch (yi2){
-            case 1 : str += "yi ";break;
-            case 2 : str += "er ";break;
-            case 3 : str += "san ";break;
-            case 4 : str += "si ";break;
-            case 5 : str += "wu ";break;
-            case 6 : str += "liu ";break;
-            case 7 : str += "qi ";break;
-            case 8 : str += "ba ";break;
-            case 9 : str += "jiu ";break;
+        switch (yi2) {
+            case 1:
+                str += "yi ";
+                break;
+            case 2:
+                str += "er ";
+                break;
+            case 3:
+                str += "san ";
+                break;
+            case 4:
+                str += "si ";
+                break;
+            case 5:
+                str += "wu ";
+                break;
+            case 6:
+                str += "liu ";
+                break;
+            case 7:
+                str += "qi ";
+                break;
+            case 8:
+                str += "ba ";
+                break;
+            case 9:
+                str += "jiu ";
+                break;
         }
-        if(!str.equals("")){
+        if (!str.equals("")) {
             str += "yi";
         }
         n %= 100000000;
         int wan = n / 10000;
-        if(wan == 0){
-            
+        if (wan == 0) {
+
         }
     }
 }

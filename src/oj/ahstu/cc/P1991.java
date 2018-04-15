@@ -7,8 +7,8 @@ import java.util.Scanner;
 /**
  * Created by jal on 2017/12/16 0016.
  */
-class Party{
-    String person,party;
+class Party {
+    String person, party;
     int num;
 
     public Party(String person, String party, int num) {
@@ -22,32 +22,33 @@ class Party{
         this.party = party;
     }
 }
+
 public class P1991 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         while (scanner.hasNext()) {
             int n = Integer.parseInt(scanner.nextLine());
-            if(n == 1){
+            if (n == 1) {
                 String person = scanner.nextLine();
                 String party = scanner.nextLine();
                 int m = Integer.parseInt(scanner.nextLine());
-                for(int i = 0; i < m; i++){
+                for (int i = 0; i < m; i++) {
                     scanner.nextLine();
                 }
                 System.out.println(party);
                 continue;
             }
-            Party []p = new Party[n];
-            for(int i = 0; i < n; i++){
+            Party[] p = new Party[n];
+            for (int i = 0; i < n; i++) {
                 String person = scanner.nextLine();
                 String party = scanner.nextLine();
-                p[i] = new Party(person,party,0);
+                p[i] = new Party(person, party, 0);
             }
-            int m =Integer.parseInt(scanner.nextLine());
-            for(int i = 0; i < m; i++){
+            int m = Integer.parseInt(scanner.nextLine());
+            for (int i = 0; i < m; i++) {
                 String temp = scanner.nextLine();
-                for(int j = 0; j < n; j++){
-                    if(temp.equals(p[j].person)){
+                for (int j = 0; j < n; j++) {
+                    if (temp.equals(p[j].person)) {
                         p[j].num++;
                         break;
                     }
@@ -59,9 +60,9 @@ public class P1991 {
                     return o2.num - o1.num;
                 }
             });
-            if(p[0].num == p[1].num){
+            if (p[0].num == p[1].num) {
                 System.out.println("tie");
-            }else {
+            } else {
                 System.out.println(p[0].party);
             }
         }

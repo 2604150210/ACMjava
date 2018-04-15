@@ -1,6 +1,5 @@
 package oj.ahstu.cc;
 
-import clojure.lang.IFn;
 
 import java.util.Scanner;
 
@@ -18,7 +17,7 @@ public class P1525 {
         Double d = H - h;
         Double x = d * r / H;
         R = x;
-        Double V=1.0/3*Pi*h*(R*R+r*r+R*r);
-        System.out.printf("%.2f\n",V);
+        Double V = 1.0 / 3 * Pi * h * (R * R + r * r + R * r);
+        System.out.printf("%.2f\n", V);
     }
 }
