@@ -6,6 +6,7 @@ import java.io.PrintStream;
 import java.util.Scanner;
 
 import static java.util.Arrays.deepToString;
+import static java.util.Arrays.sort;
 
 public class Test2 {
     public static final String INPUT_FILE = "./bin/in.txt";
@@ -13,35 +14,128 @@ public class Test2 {
 
     static boolean LOCAL = System.getSecurityManager() == null;
     static boolean TO_FILE = true;
-    Scanner sc = new Scanner(System.in);
+    Scanner scanner = new Scanner(System.in);
 
+    class Direction{
+        int head,face;
+    }
     void run() {
-        //提交时需要注释debug函数
-        // debug(1,2,3+4,new String("hello"),true,0.8f);
-        // System.out.println(sc.nextInt()+sc.nextInt());
-        out = new  double[6];
-        dfs(0,0);
+        int T = scanner.nextInt();
+        while (T-- > 0){
+            int n = scanner.nextInt();
+            int x,y,z;
+            Direction direction = new Direction();
+            direction.face = 0;
+            direction.head = 2;
+            for (int i = 0; i < n; i++){
+                String str = scanner.next();
+                int dis = scanner.nextInt();
+                switch (str){
+                    case "forward":direction = forward(direction);break;
+                    case "back":direction = back(direction);break;
+                    case "left":direction = left(direction);break;
+                    case "right":direction = right(direction);break;
+                    case "up":direction = up(direction);break;
+                    case "down":direction = down(direction);break;
+                }
+            }
+        }
+
     }
 
-    private void dfs(int step,int t) {
-        if(step>=6){
-            double sum = 0;
-            for (int i = 0; i < 6 ; i ++){
-                sum+=out[i];
-            }
-            if (Math.abs(sum - 0.41)<0.001){
-                debug(out);
-            }
-            return;
-        }
-        for (int i = t; i <5;i++){
-            out[step] = a[i];
-            dfs(step+1,i);
-        }
+    private Direction down(Direction direction) {
+        return null;
     }
 
-    double []a = {0.01,0.05,0.1,0.25,0.5};
-    double []out ;
+    private Direction up(Direction direction) {
+        return null;
+    }
+
+    private Direction right(Direction direction) {
+        return left(left(left(direction)));
+    }
+
+    private Direction left(Direction direction) {
+        if (direction.head == 2){
+            int ret = 0;
+            switch (direction.face){
+                case 0: ret = 4;break;
+                case 1: ret = 0;break;
+                case 3: ret = 1;break;
+                case 4: ret = 3;break;
+            }
+            direction.face = ret;
+        }
+        if (direction.head == 5){
+            int ret = 0;
+            switch (direction.face){
+                case 0: ret = 1;break;
+                case 1: ret = 3;break;
+                case 3: ret = 4;break;
+                case 4: ret = 0;break;
+            }
+            direction.face = ret;
+        }
+        if (direction.head == 0){
+            int ret = 0;
+            switch (direction.face){
+                case 1: ret = 5;break;
+                case 2: ret = 4;break;
+                case 4: ret = 2;break;
+                case 5: ret = 1;break;
+            }
+            direction.face = ret;
+        }
+        if (direction.head == 3){
+            int ret = 0;
+            switch (direction.face){
+                case 1: ret = 2;break;
+                case 2: ret = 4;break;
+                case 4: ret = 5;break;
+                case 5: ret = 1;break;
+            }
+            direction.face = ret;
+        }
+        if (direction.head == 1){
+            int ret = 0;
+            switch (direction.face){
+                case 0: ret = 2;break;
+                case 2: ret = 3;break;
+                case 3: ret = 5;break;
+                case 5: ret = 0;break;
+            }
+            direction.face = ret;
+        }
+        if (direction.head == 4){
+            int ret = 0;
+            switch (direction.face){
+                case 0: ret = 5;break;
+                case 2: ret = 0;break;
+                case 3: ret = 2;break;
+                case 5: ret = 3;break;
+            }
+            direction.face = ret;
+        }
+        return direction;
+    }
+
+    private Direction back(Direction direction) {
+        int ret = 0;
+        switch (direction.face){
+            case 0:ret = 3;break;
+            case 1:ret = 4;break;
+            case 2:ret = 5;break;
+            case 3:ret = 0;break;
+            case 4:ret = 1;break;
+            case 5:ret = 2;break;
+        }
+        direction.face = ret;
+        return direction;
+    }
+
+    private Direction forward(Direction direction) {
+        return direction;
+    }
 
 
     public void debug(Object ... objects){

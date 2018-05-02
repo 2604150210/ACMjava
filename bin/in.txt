@@ -1,19 +1,112 @@
-2
-5 8
-1 2 3
-1 3 2
-1 4 5
-2 3 1
-2 5 3
-3 4 2
-3 5 4
-4 5 3
-1 5
-5 6
-2 3 1
-3 2 1
-3 1 10
-4 5 2
-5 2 7
-5 2 7
-4 1
+13 13
+#############
+#GG.GGG#GGG.#
+###.#G#G#G#G#
+#.......#..G#
+#G#.###.#G#G#
+#GG.GGG.#.GG#
+#G#.#G#.#.###
+##G...G.....#
+#G#.#G###.#G#
+#...G#GGG.GG#
+#G#.#G#G#.#G#
+#GG.GGG#G.GG#
+#############
+1 1
+#
+2 2
+##
+##
+3 3
+###
+#.#
+#G#
+4 4
+####
+GGGG
+....
+####
+5 5
+#####
+GG.GG
+..G..
+##.##
+G#G#G
+26 26
+##########################
+#GG.GGG#GGG...GG.GGG#GGG.#
+###.#G#G#G#G####.#G#G#G#G#
+#.......#..G##.......#..G#
+#G#.###.#G#G##G#.###.#G#G#
+#GG.GGG.#.GG##GG.GGG.#.GG#
+#G#.#G#.#.####G#.#G#.#.###
+##G...G.....###G...G.....#
+#G#.#G###.#G##G#.#G###.#G#
+#...G#GGG.GG##...G#GGG.GG#
+#G#.#G#G#.#G##G#.#G#G#.#G#
+#GG.GGG#G.GGGGGG.GGG#G.GG#
+#........................#
+#GGGGGGGGGGGGGGGGGGGGGGGG#
+#GG.GGG#GGG...GG.GGG#GGG.#
+###.#G#G#G#G####.#G#G#G#G#
+#.......#..G##.......#..G#
+#G#.###.#G#G##G#.###.#G#G#
+#GG.GGG.#.GG##GG.GGG.#.GG#
+#G#.#G#.#.####G#.#G#.#.###
+##G...G.....###G...G.....#
+#G#.#G###.#G##G#.#G###.#G#
+#...G#GGG.GG##...G#GGG.GG#
+#G#.#G#G#.#G##G#.#G#G#.#G#
+#GG.GGG#G.GGGGGG.GGG#G.GG#
+##########################
+50 50
+##################################################
+#GG.GGG#GGG...GG.GGG#GGG.GG.GGG#GGG...GG.GGG#GGG.#
+###.#G#G#G#G####.#G#G#G#G##.#G#G#G#G####.#G#G#G#G#
+#.......#..G##.......#..G.......#..G##.......#..G#
+#G#.###.#G#G##G#.###.#G#GG#.###.#G#G##G#.###.#G#G#
+#GG.GGG.#.GG##GG.GGG.#.GGGG.GGG.#.GG##GG.GGG.#.GG#
+#G#.#G#.#.####G#.#G#.#.##G#.#G#.#.####G#.#G#.#.###
+##G...G.....###G...G.....#G...G.....###G...G.....#
+#G#.#G###.#G##G#.#G###.#GG#.#G###.#G##G#.#G###.#G#
+#...G#GGG.GG##...G#GGG.GG...G#GGG.GG##...G#GGG.GG#
+#G#.#G#G#.#G##G#.#G#G#.#GG#.#G#G#.#G##G#.#G#G#.#G#
+#GG.GGG#G.GGGGGG.GGG#G.GGGG.GGG#G.GGGGGG.GGG#G.GG#
+#................................................#
+#GGGGGGGGGGGGGGGGGGGGGG.GGGGGGGGGGGGGGGGGGGGGGGGG#
+#GG.GGG#GGG...GG.GGG#GGGGG.GGG#GGG...GG.GGG#GGG.##
+###.#G#G#G#G####.#G#G#G#G##.#G#G#G#G####.#G#G#G#G#
+#.......#..G##.......#..G.......#..G##.......#..G#
+#G#.###.#G#G##G#.###.#G##G#.###.#G#G##G#.###.#G#G#
+#GG.GGG.#.GG##GG.GGG.#.G#GG.GGG.#.GG##GG.GGG.#.GG#
+#G#.#G#.#.####G#.#G#.#.##G#.#G#.#.####G#.#G#.#.###
+##G...G.....###G...G....##G...G.....###G...G.....#
+#G#.#G###.#G##G#.#G###.#GG#.#G###.#G##G#.#G###.#G#
+#G#.#G###.#G##G#.#G###.#GG#.#G###.#G##G#.#G###.#G#
+#G#.#G#G#.#G##G#.#G#G#.#GG#.#G#G#.#G##G#.#G#G#.#G#
+#GG.GGG#G.GGGGGG.GGG#G.GGGG.GGG#G.GGGGGG.GGG#G.GG#
+#GG.GGG#GGG...GG.GGG#GGG.GG.GGG#GGG...GG.GGG#GGG.#
+###.#G#G#G#G####.#G#G#G#G##.#G#G#G#G####.#G#G#G#G#
+#.......#..G##.......#..G.......#..G##.......#..G#
+#.......#..G##.......#..G.......#..G##.......#..G#
+#GG.GGG.#.GG##GG.GGG.#.G#GG.GGG.#.GG##GG.GGG.#.GG#
+#G#.#G#.#.####G#.#G#.#.##G#.#G#.#.####G#.#G#.#.###
+#G#.#G#.#.####G#.#G#.#.##G#.#G#.#.####G#.#G#.#.###
+#G#.#G###.#G##G#.#G###.#GG#.#G#.#.####G#.#G#.#.###
+#G#.#G#.#.####G#.#G#.#.##GG.#G#G#.#G##G#.#G#G#.#G#
+#G#.#G#G#.#G##G#.#G#G#.#G##.#G#G#.#G##G#.#G#G#.#G#
+#GG.GGG#G.GGGGGG.GGG#G.GGGG.GGG#G.GGGGGG.GGG#G.GG#
+#........................GG.GGG#G.GGGGGG.GGG#G.GG#
+#GGGGGGGGGGGGGGGGGGGGGGG#GGGGGGGGGGGGGGGGGGGGGGGG#
+#GG.GGG#GGG...GG.GGG#GGG.GG.GGG#GGG...GG.GGG#GGG.#
+###.#G#G#G#G####.#G#G#G####.#G#G#G#G####.#G#G#G#G#
+#.......#..G##.......#.##.......#..G##.......#..G#
+#G#.###.#G#G##G#.###.#G#GG#.###.#G#G##G#.###.#G#G#
+#GG.GGG.#.GG##GG.GGG.#.##G#.###.#G#G##G#.###.#G#G#
+#G#.#G#.#.####G#.#G#.#.##G#.#G#.#.####G#.#G#.#.###
+##G...G.....###G...G....##G...G.....###G...G.....#
+#G#.#G###.#G##G#.#G###.##G#.#G###.#G##G#.#G###.#G#
+#...G#GGG.GG##...G#GGG.G#...G#GGG.GG##...G#GGG.GG#
+#G#.#G#G#.#G##G#.#G#G#.##G#.#G#G#.#G##G#.#G#G#.#G#
+#GG.GGG#G.GGGGGG.GGG#G.G#GG.GGG#G.GGGGGG.GGG#G.GG#
+##################################################
