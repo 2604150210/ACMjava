@@ -1,3 +1,6 @@
+/*
+http://acm.timus.ru/problem.aspx?num=1989
+ */
 package classical_algorithm.segment_tree;
 import static java.util.Arrays.*;
 import java.io.*;

@@ -1,91 +1,34 @@
-package classical_algorithm.segment_tree;
+package jalTest;
 
 import java.io.*;
-import java.util.Scanner;
+
+import static java.util.Arrays.deepToString;
 
 /**
- * Created by jal on 2018/5/2 0002.
+ * Created by jal on 2018/5/8 0008.
  */
-public class nyist116士兵杀敌2 {
-    static int n,m;
-    static int[] a;
-    static class SegTree{
-        int left,right,val,add;
-    };
-    static SegTree[]tree;
-    public static void main(String[] args) throws IOException{
+public class JavaHighSpeedIOTest {
+    public static void main(String[] args) throws IOException {
         // 这句是io流包装，记住就好
         StreamTokenizer in = new StreamTokenizer(new BufferedReader(new InputStreamReader(System.in)));
         PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
         //StreamTokenizer.TT_EOF这个是个参数，就是EOF
-        while (in.nextToken() != StreamTokenizer.TT_EOF){
-            int n = (int) in.nval;
+
+        while (in.nextToken() != StreamTokenizer.TT_EOF) {
+            int a = (int) in.nval;//获取整数
+            in.nextToken();//nextToken()方法相当于让光标指向下一个位置，记得写
+            int b = (int) in.nval;
             in.nextToken();
-            int m = (int) in.nval;
-            a = new int[n+1];
-            tree = new SegTree[4 * n];
-            for (int i = 0; i < 4*n; i++){
-                tree[i] = new SegTree();
-            }
-            for(int i = 1; i <= n; i++){
-                in.nextToken();
-                a[i] = (int) in.nval;
-            }
-            build(1, 1, n);
-            for (int i = 1; i <= m; i++){
-                in.nextToken();
-                String str = in.sval;
-                in.nextToken();
-                int x = (int) in.nval;
-                in.nextToken();
-                int y = (int) in.nval;
-                if (str.equals("QUERY")){
-                    out.println(query(1,x,y));
-                    out.flush();
-                }
-                if (str.equals("ADD")){
-                    add(1,x,y);
-                }
-            }
+            int c = (int) in.nval;
+            in.nextToken();
+            double d = in.nval;
+            in.nextToken();
+            String str = in.sval;//注意：sval是获取不带空格的字符串，含有空格的字符串貌似无法读取。
+            in.nextToken();
+            //debug(a,b,c,d,str);
         }
     }
-
-    private static void build(int root, int left, int right) {
-        tree[root].left = left;
-        tree[root].right = right;
-        if (left == right){
-            tree[root].val = a[left];
-            return;
-        }
-        int mid = (left + right) >> 1;
-        build(root << 1, left, mid);
-        build(root << 1 | 1, mid + 1, right);
-        tree[root].val = tree[root << 1].val + tree[root <<1|1].val;
-    }
-
-    private static int query(int root,int left, int right){
-        if (left <= tree[root].left && tree[root].right <= right){
-            return tree[root].val;
-        }
-        int mid = (tree[root].left + tree[root].right) >> 1;
-        if (right <= mid){
-            return query(root << 1, left, right);
-        }
-        if (left > mid){
-            return query(root << 1 | 1, left, right);
-        }
-        return query(root << 1, left, mid) + query(root << 1 | 1, mid + 1, right);
-    }
-    private static void add(int root, int index, int val){
-        if (tree[root].left == tree[root].right){
-            tree[root].val += val;
-            return;
-        }
-        int mid = (tree[root].left + tree[root].right) >>1;
-        if (index <= mid){
-            add(root <<1, index, val);
-        }
-        else add(root <<1|1, index, val);
-        tree[root].val = tree[root<<1].val + tree[root<<1|1].val;
+    private static void debug(Object ...objects){
+        System.out.println(deepToString(objects));//不定参打印语句
     }
 }
