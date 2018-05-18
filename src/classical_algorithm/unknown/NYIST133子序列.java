@@ -72,7 +72,7 @@ public class NYIST133子序列 {
                 }
             }
             int len2 = j - i + 1;
-            out.println(Math.min(len1,len2));
+            out.print(String.format("%d\n",Math.min(len1,len2)));
             out.flush();
         }
     }

@@ -1,112 +1,100 @@
-13 13
-#############
-#GG.GGG#GGG.#
-###.#G#G#G#G#
-#.......#..G#
-#G#.###.#G#G#
-#GG.GGG.#.GG#
-#G#.#G#.#.###
-##G...G.....#
-#G#.#G###.#G#
-#...G#GGG.GG#
-#G#.#G#G#.#G#
-#GG.GGG#G.GG#
-#############
-1 1
-#
-2 2
-##
-##
-3 3
-###
-#.#
-#G#
-4 4
-####
-GGGG
-....
-####
-5 5
-#####
-GG.GG
-..G..
-##.##
-G#G#G
-26 26
-##########################
-#GG.GGG#GGG...GG.GGG#GGG.#
-###.#G#G#G#G####.#G#G#G#G#
-#.......#..G##.......#..G#
-#G#.###.#G#G##G#.###.#G#G#
-#GG.GGG.#.GG##GG.GGG.#.GG#
-#G#.#G#.#.####G#.#G#.#.###
-##G...G.....###G...G.....#
-#G#.#G###.#G##G#.#G###.#G#
-#...G#GGG.GG##...G#GGG.GG#
-#G#.#G#G#.#G##G#.#G#G#.#G#
-#GG.GGG#G.GGGGGG.GGG#G.GG#
-#........................#
-#GGGGGGGGGGGGGGGGGGGGGGGG#
-#GG.GGG#GGG...GG.GGG#GGG.#
-###.#G#G#G#G####.#G#G#G#G#
-#.......#..G##.......#..G#
-#G#.###.#G#G##G#.###.#G#G#
-#GG.GGG.#.GG##GG.GGG.#.GG#
-#G#.#G#.#.####G#.#G#.#.###
-##G...G.....###G...G.....#
-#G#.#G###.#G##G#.#G###.#G#
-#...G#GGG.GG##...G#GGG.GG#
-#G#.#G#G#.#G##G#.#G#G#.#G#
-#GG.GGG#G.GGGGGG.GGG#G.GG#
-##########################
-50 50
-##################################################
-#GG.GGG#GGG...GG.GGG#GGG.GG.GGG#GGG...GG.GGG#GGG.#
-###.#G#G#G#G####.#G#G#G#G##.#G#G#G#G####.#G#G#G#G#
-#.......#..G##.......#..G.......#..G##.......#..G#
-#G#.###.#G#G##G#.###.#G#GG#.###.#G#G##G#.###.#G#G#
-#GG.GGG.#.GG##GG.GGG.#.GGGG.GGG.#.GG##GG.GGG.#.GG#
-#G#.#G#.#.####G#.#G#.#.##G#.#G#.#.####G#.#G#.#.###
-##G...G.....###G...G.....#G...G.....###G...G.....#
-#G#.#G###.#G##G#.#G###.#GG#.#G###.#G##G#.#G###.#G#
-#...G#GGG.GG##...G#GGG.GG...G#GGG.GG##...G#GGG.GG#
-#G#.#G#G#.#G##G#.#G#G#.#GG#.#G#G#.#G##G#.#G#G#.#G#
-#GG.GGG#G.GGGGGG.GGG#G.GGGG.GGG#G.GGGGGG.GGG#G.GG#
-#................................................#
-#GGGGGGGGGGGGGGGGGGGGGG.GGGGGGGGGGGGGGGGGGGGGGGGG#
-#GG.GGG#GGG...GG.GGG#GGGGG.GGG#GGG...GG.GGG#GGG.##
-###.#G#G#G#G####.#G#G#G#G##.#G#G#G#G####.#G#G#G#G#
-#.......#..G##.......#..G.......#..G##.......#..G#
-#G#.###.#G#G##G#.###.#G##G#.###.#G#G##G#.###.#G#G#
-#GG.GGG.#.GG##GG.GGG.#.G#GG.GGG.#.GG##GG.GGG.#.GG#
-#G#.#G#.#.####G#.#G#.#.##G#.#G#.#.####G#.#G#.#.###
-##G...G.....###G...G....##G...G.....###G...G.....#
-#G#.#G###.#G##G#.#G###.#GG#.#G###.#G##G#.#G###.#G#
-#G#.#G###.#G##G#.#G###.#GG#.#G###.#G##G#.#G###.#G#
-#G#.#G#G#.#G##G#.#G#G#.#GG#.#G#G#.#G##G#.#G#G#.#G#
-#GG.GGG#G.GGGGGG.GGG#G.GGGG.GGG#G.GGGGGG.GGG#G.GG#
-#GG.GGG#GGG...GG.GGG#GGG.GG.GGG#GGG...GG.GGG#GGG.#
-###.#G#G#G#G####.#G#G#G#G##.#G#G#G#G####.#G#G#G#G#
-#.......#..G##.......#..G.......#..G##.......#..G#
-#.......#..G##.......#..G.......#..G##.......#..G#
-#GG.GGG.#.GG##GG.GGG.#.G#GG.GGG.#.GG##GG.GGG.#.GG#
-#G#.#G#.#.####G#.#G#.#.##G#.#G#.#.####G#.#G#.#.###
-#G#.#G#.#.####G#.#G#.#.##G#.#G#.#.####G#.#G#.#.###
-#G#.#G###.#G##G#.#G###.#GG#.#G#.#.####G#.#G#.#.###
-#G#.#G#.#.####G#.#G#.#.##GG.#G#G#.#G##G#.#G#G#.#G#
-#G#.#G#G#.#G##G#.#G#G#.#G##.#G#G#.#G##G#.#G#G#.#G#
-#GG.GGG#G.GGGGGG.GGG#G.GGGG.GGG#G.GGGGGG.GGG#G.GG#
-#........................GG.GGG#G.GGGGGG.GGG#G.GG#
-#GGGGGGGGGGGGGGGGGGGGGGG#GGGGGGGGGGGGGGGGGGGGGGGG#
-#GG.GGG#GGG...GG.GGG#GGG.GG.GGG#GGG...GG.GGG#GGG.#
-###.#G#G#G#G####.#G#G#G####.#G#G#G#G####.#G#G#G#G#
-#.......#..G##.......#.##.......#..G##.......#..G#
-#G#.###.#G#G##G#.###.#G#GG#.###.#G#G##G#.###.#G#G#
-#GG.GGG.#.GG##GG.GGG.#.##G#.###.#G#G##G#.###.#G#G#
-#G#.#G#.#.####G#.#G#.#.##G#.#G#.#.####G#.#G#.#.###
-##G...G.....###G...G....##G...G.....###G...G.....#
-#G#.#G###.#G##G#.#G###.##G#.#G###.#G##G#.#G###.#G#
-#...G#GGG.GG##...G#GGG.G#...G#GGG.GG##...G#GGG.GG#
-#G#.#G#G#.#G##G#.#G#G#.##G#.#G#G#.#G##G#.#G#G#.#G#
-#GG.GGG#G.GGGGGG.GGG#G.G#GG.GGG#G.GGGGGG.GGG#G.GG#
-##################################################
+20
+3
+apple==1.0.0
+banana>=2.3.3
+celery<4.0.0
+3
+apple 1.0.0
+banana 2.3.3
+celery 3.4.15
+1
+apple==1.0.0
+1
+banana 3.0.0
+3
+banana>2.3.3
+celery>=3.4.2
+egg==1.0.0
+4
+apple 1.0.0
+banana 2.3.3
+celery 3.4.15
+egg 0.10.10
+1
+apple==0.10.10
+1
+apple 0.1.10
+1
+apple==0.10.10
+1
+apple 0.0.10
+1
+apple==0.10.10
+1
+apple 0.10.1
+1
+apple==0.10.10
+1
+apple 0.0.1
+5
+theano==0.8.2
+tornado==0.1.0
+redis<3.0.0
+scipy>0.17.1
+xlwt>1.0.0
+5
+theano 0.8.1
+tornado 0.1.1
+redis 2.10.5
+scipy 0.19.0
+xlwt 0.1.1
+1
+a==0.1.1
+1
+a 0.1.2
+1
+a<=0.1.1
+1
+a 0.1.0
+1
+a<=0.1.2
+1
+a 0.1.15
+1
+a>=0.1.2
+1
+a 0.1.15
+1
+a>=0.1.2
+1
+a 0.1.20
+1
+a>0.1.2
+1
+a 0.1.20
+1
+a<=0.1.2
+1
+a 0.1.20
+1
+a<0.1.2
+1
+a 0.1.20
+1
+niconiconi>=99.99.99
+1
+niconiconi 99.99.9
+1
+niconiconi<99.99.89
+1
+niconiconi 99.99.9
+1
+niconiconi<99.99.9
+1
+niconiconi 99.99.99
+2
+niconiconi<99.99.9
+aaaaaaaaaa==0.0.1
+2
+niconiconi 99.99.99
+aaaaaaaaaa 0.0.11
